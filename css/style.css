@@ -15,14 +15,14 @@
 
 @font-face {
     font-family: 'Roboto Medium';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    src: url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Bold';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -34,6 +34,221 @@
     font-style: normal;
 }
 
-h1{
-    font-family: 'Roboto Light', sans-serif;
+body{
+    background-color: #202024;
+}
+
+/* Элементы */
+
+.button{
+    background:  linear-gradient(248.67deg, rgba(255, 255, 255, 0) 20.84%, rgba(255, 255, 255, 0.29) 36.06%, rgba(255, 255, 255, 0) 64.04%),
+                linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+    border-radius: 50px;
+    border: none;
+
+    font-family: 'Roboto-Regular', Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    padding: 30px 150px;
+}
+
+/* Секция Header */
+
+header{
+    background-image: url("../img/blik.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.header-top{
+    margin: auto;
+
+    margin-bottom: 100px;
+}
+
+.header-top .text{
+    font-family: 'Roboto Light', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.header-top__text_s{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.header-top__text_b{
+    font-size: 25px;
+}
+
+.header-top__line{
+    height: 1px;
+    color: rgba(255, 255, 255, 0.2);
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header-center__img img{
+    display: block;
+    margin: auto;
+}
+
+.header-center__text{
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 25px;
+    color: #F6C866;
+    text-align: center;
+
+    margin: auto;
+    max-width: 500px;
+
+    margin-bottom: 40px;
+}
+
+.header-center__text_b{
+    text-transform: uppercase;
+}
+
+.header-center__wrapper{
+    display: block;
+
+}
+
+.header-center__wrapper_button{
+    display: grid;
+    margin: auto;
+
+    margin-bottom: 35px;
+}
+
+.header-center__text_s{
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.header-bottom__elem1{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 150px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+
+    margin-bottom: 70px;
+}
+
+.header-bottom__elem1 img{
+    display: block;
+    margin: auto;
+    margin-top: -90px;
+}
+
+.header-bottom__text{
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+
+    padding: 50px 30px;
+}
+
+.header-bottom__text_y{
+    font-family: 'Roboto Medium', Arial, sans-serif;
+    color: #F6C866;
+}
+
+/* Секция Main */
+
+.main-content__wrapper{
+    background-image: url("../img/bg_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    max-width: 1440px;
+
+    margin-bottom: 130px;
+}
+
+.main-content__text{
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin: auto;
+    max-width: 380px;
+
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+
+.main-content__text_y{
+    color: #F6C866;
+}
+
+.main-content__question_text{
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #F6C866;
+
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.main-content__question_button{
+    display: grid;
+    margin: auto;
+
+    margin-bottom: 35px;
+}
+
+.main-content__question_text_s{
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+/* Секция Footer */
+
+.footer-content{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.button-content{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    background-image: url('../img/rune1.svg'),
+                      url('../img/rune2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50px, 50px;
+    background-position: top, bottom;
+}
+
+.button-content__text{
+    font-family: 'Bad Script', Arial, sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-content__text{
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 7px;
+    color: #9D9D9D;
+
+    text-align: center;
 }
