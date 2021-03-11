@@ -1,0 +1,39 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bad Script';
+    src: url(../fonts/Bad_Script/BadScript-Regular.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'Roboto Light', sans-serif;
+}
