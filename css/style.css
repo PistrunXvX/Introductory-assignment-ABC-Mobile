@@ -219,6 +219,12 @@ header{
 .footer-content{
     max-width: 1440px;
     margin: auto;
+
+    background-image: url('../img/eye.svg'),
+                      url('../img/moon.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, 160px;
+    background-position: right top, left 90%;
 }
 
 .button-content{
@@ -325,6 +331,11 @@ header{
     }
 
     /* Секция Footer */
+
+    .footer-content{
+        background-size: 80px, 50px;
+        background-position: 110% top, -5% 90%;
+    }
 
     .button-content__text{
         font-size: 20px;
