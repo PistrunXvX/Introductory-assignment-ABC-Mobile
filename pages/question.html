@@ -11,11 +11,13 @@
 <body>
     <main class="main-content">
         <section class="header-question">
-            <p class="button-question__text">
-                Мы расскажем Вам не только подробности вашей смерти, 
-                но также поможем Вам избежать этой ужасной даты и 
-                продлить вашу жизнь на многие годы.
-            </p>
+            <div class="add_popup">
+                <p class="button-question__text">
+                    Мы расскажем Вам не только подробности вашей смерти, 
+                    но также поможем Вам избежать этой ужасной даты и 
+                    продлить вашу жизнь на многие годы.
+                </p>
+            </div>
             <hr class="button-question__line">
         </section>
         <section class="form-content">
@@ -165,6 +167,56 @@
             Loading
         </p>
     </div>
+    <div class="progress-wrapper">
+        <img src="../img/microphone.svg" alt="Грузим вашу смерть">
+        <div class="progressbar-outside">
+            <div class="progressbar-inside">
+            </div>
+        </div>
+        <p class="progressbar-text">
+            0%
+        </p>
+        <p class="progressbar-text_b">
+            Запись сообщения
+        </p>
+    </div>
+    <section class="result-content">
+        <div class="bg_popup">
+            <p class="result-content__text_black">
+                Спасибо за Ваши ответы!
+                <span class="result-content__text_b">
+                    Мы подготовили для Вас персональную 
+                    аудио запись с Вашим прогнозом.
+                </span> 
+            </p>
+        </div>
+        <p class="result-content__text">
+            Вы можете узнать, как повлиять на события, 
+            которые ожидают вас в ближайшем будущем. 
+        </p>
+        <div class="event-soon">
+            <p class="event-soon__text">
+                <span class="event-soon__text_b">
+                    Первое значимое событие может произойти уже <span class="next-date"> </span>.02.2021
+                </span>, 
+                Вам надо быть готовым, что бы последствия не оказались необратимыми.
+            </p>
+        </div>
+        <p class="result-content__text">
+            Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона. 
+            Прослушайте важную информацию!
+        </p>
+        <button class="result-content__button" onclick="showResult()">
+            Позвонить и прослушать
+        </button>
+        <ul class="result-show">
+            <li class="show-1">Вопрос 1:</li>
+            <li class="show-2">Вопрос 2:</li>
+            <li class="show-3">Вопрос 3:</li>
+            <li class="show-4">Вопрос 4:</li>
+            <li class="show-5">Вопрос 5:</li>
+        </ul>
+    </section>
     <script src="../js/script.js"></script>
 </body>
 </html>
