@@ -53,6 +53,42 @@ body{
     padding: 30px 150px;
 }
 
+.select-arrow{
+    position: relative;
+    display: grid;
+    max-width: 345px;
+    margin: auto;
+
+    margin-bottom: 35px;
+}
+
+.select-arrow:after{
+    content: "▼";
+    position: absolute;
+    font-size: 25px;
+    z-index: 1;
+    top: 30%;
+    right: 10%;
+
+}
+
+.select-form{
+    font-family: 'Roboto Regular';
+    font-size: 20px;
+    color: #202024;
+    text-align: center;
+    padding: 30px 100px;
+
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    appearance: none;
+}
+
+.error{
+    border: 1px solid red;
+}
+
 /* Секция Header */
 
 header{
@@ -320,6 +356,68 @@ header{
     color: rgba(255, 255, 255, 0.6);
 
 }
+.select-from__button{
+    display: grid;
+    margin: auto;
+}
+
+.select-form__wrapper{
+    display: none;
+}
+
+.loader-wrapper{
+    margin: auto;
+    display: none;
+    margin-top: 50vh;
+}
+
+.loader-content{
+    width: 75px;
+    height: 75px;
+    margin: auto;
+
+    background-image: url('../img/preloader.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    margin-bottom: 25px;
+}
+
+.loader-content__text{
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+
+    text-align: center;
+}
+
+.main-content{
+    display: block;
+}
+
+.form-content__hidden{
+    display: none;
+}
+
+.form-content__hidden_2{
+    display: none;
+}
+
+/* Animation */
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 /* Adaptive */
 
@@ -408,5 +506,34 @@ header{
 
     .button-content{
         background-size: 30px, 30px;
+    }
+
+    /* Страница question */
+    
+    .header-question{
+        background-size: 100px;
+        background-position: 110% 90%;
+    }
+
+    .button-question__text{
+        font-size: 14px;
+        padding-right: 40px;
+        padding-left: 40px;
+        line-height: 20px;
+    }
+
+    .form-content{
+        background-size: 50px;
+        background-position: -5% bottom;
+
+        padding-bottom: 35px;
+    }
+
+    .form-content__text{
+        font-size: 16px;
+        line-height: 25px;
+        padding-top: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
